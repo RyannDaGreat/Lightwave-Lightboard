@@ -179,7 +179,16 @@ class Ribbon:
 		buttons.metal_button.color=(255,0,255)
 
 		def show_instructions():
-			display.set_text('Running calibration on ribbon '+self.name+'\nPlease press the glowing green buttons until\nthe red dot is barely on the ribbon')
+			display.set_text('Running calibration on ribbon '+self.name+'\n'
+			                 'Please press the glowing green buttons until\n'
+			                 'the red dot is barely on the ribbon\n'
+			                 '\n'
+			                 'HOW TO SAVE YOUR CALIBRATION:\n'
+			                 '1. Touch cyan dots until orange\n'
+			                 '2. Press green button 2 when done\n'
+			                 '3. Say NO to testing (or test first)\n'
+			                 '4. Say YES to "Are you sure done?"\n'
+			                 '5. Then you can save!')
 			buttons.set_green_button_lights(1,1,0,0)
 		show_instructions()
 
